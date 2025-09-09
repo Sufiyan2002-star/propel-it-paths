@@ -11,8 +11,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="font-poppins font-bold text-xl text-foreground">
-            Anext Technology LLC
+          <Link to="/" className="flex items-center">
+            <img src="/lovable-uploads/7bdf4b84-eeb2-4f8e-ac61-07aaafb70b5c.png" alt="Anext Technology LLC" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

@@ -263,7 +263,7 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                     <div>
                       <p className="font-poppins font-semibold text-foreground">Phone</p>
-                      <p className="font-open-sans text-muted-foreground">(512) 555-0198</p>
+                      <p className="font-open-sans text-muted-foreground">+1 4848317699</p>
                     </div>
                   </div>
 
@@ -271,7 +271,7 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary flex-shrink-0" />
                     <div>
                       <p className="font-poppins font-semibold text-foreground">Email</p>
-                      <p className="font-open-sans text-muted-foreground">support@anextechnologyllc.com</p>
+                      <p className="font-open-sans text-muted-foreground">info@anextechnologyllc.com</p>
                     </div>
                   </div>
 

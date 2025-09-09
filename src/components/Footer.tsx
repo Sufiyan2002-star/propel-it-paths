@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Tagline */}
           <div>
-            <div className="font-poppins font-bold text-xl mb-4">
-              Anext Technology LLC
+            <div className="mb-4">
+              <img src="/lovable-uploads/7bdf4b84-eeb2-4f8e-ac61-07aaafb70b5c.png" alt="Anext Technology LLC" className="h-12 w-auto filter brightness-0 invert" />
             </div>
             <p className="font-open-sans text-primary-foreground/80 mb-4">
               Building Brighter Futures in Tech
@@ -64,11 +64,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 font-open-sans text-primary-foreground/80">
                 <Mail size={16} />
-                <span>support@anextechnologyllc.com</span>
+                <span>info@anextechnologyllc.com</span>
               </div>
               <div className="flex items-center space-x-3 font-open-sans text-primary-foreground/80">
                 <Phone size={16} />
-                <span>(512) 555-0198</span>
+                <span>+1 4848317699</span>
               </div>
             </div>
           </div>
