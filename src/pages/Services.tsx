@@ -173,107 +173,228 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Service Packages Section */}
+      {/* Pricing Plans Section */}
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-foreground mb-6">
-              Flexible Service Packages
+              Special Benefits Comparison
             </h2>
             <p className="font-open-sans text-lg text-muted-foreground">
-              Choose individual services or combine them for maximum impact on your career trajectory.
+              Choose the plan that best fits your career goals and budget
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Pricing Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {/* Silver Plan */}
             <Card className="shadow-card border-2 border-transparent hover:border-primary/20 transition-colors">
-              <CardHeader className="text-center">
-                <CardTitle className="font-poppins text-xl text-foreground">Starter Package</CardTitle>
-                <p className="font-open-sans text-muted-foreground">Perfect for career exploration</p>
+              <CardHeader className="text-center bg-gradient-to-br from-slate-100 to-slate-200 rounded-t-lg">
+                <div className="bg-slate-600 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-2">
+                  SILVER
+                </div>
+                <CardTitle className="font-poppins text-2xl text-foreground">$1000</CardTitle>
+                <p className="font-open-sans text-sm text-muted-foreground">Service Fee</p>
+                <p className="font-open-sans text-lg font-semibold text-foreground">$1000 Offer Letter</p>
               </CardHeader>
-              <CardContent className="text-center">
-                <ul className="space-y-3 font-open-sans text-sm text-muted-foreground mb-6">
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>Career Assessment & Planning</span>
+              <CardContent className="p-6">
+                <ul className="space-y-3 font-open-sans text-sm mb-6">
+                  <li className="flex items-center space-x-3">
+                    <span className="text-red-500">✗</span>
+                    <span>No Interview Support</span>
                   </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>Resume Optimization</span>
+                  <li className="flex items-center space-x-3">
+                    <span className="text-red-500">✗</span>
+                    <span>No Background Check</span>
                   </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>1 Mock Interview Session</span>
+                  <li className="flex items-center space-x-3">
+                    <span className="text-green-500">✓</span>
+                    <span>30 Interview Resume & Marketing</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <span className="text-amber-500 font-bold">7%</span>
+                    <span>Total Annual Income</span>
                   </li>
                 </ul>
                 <Button variant="outline" asChild className="w-full">
-                  <Link to="/contact">Get Started</Link>
+                  <Link to="/contact">Choose Silver</Link>
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="shadow-elegant border-2 border-primary/30">
-              <CardHeader className="text-center">
-                <div className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full inline-block mb-2">
-                  Most Popular
+            {/* Gold Plan */}
+            <Card className="shadow-card border-2 border-transparent hover:border-primary/20 transition-colors">
+              <CardHeader className="text-center bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-t-lg">
+                <div className="bg-yellow-600 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-2">
+                  GOLD
                 </div>
-                <CardTitle className="font-poppins text-xl text-foreground">Professional Package</CardTitle>
-                <p className="font-open-sans text-muted-foreground">Complete career transformation</p>
+                <CardTitle className="font-poppins text-2xl text-foreground">$2500</CardTitle>
+                <p className="font-open-sans text-sm text-muted-foreground">Service Fee</p>
+                <p className="font-open-sans text-lg font-semibold text-foreground">$2500 Offer Letter</p>
               </CardHeader>
-              <CardContent className="text-center">
-                <ul className="space-y-3 font-open-sans text-sm text-muted-foreground mb-6">
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>Everything in Starter Package</span>
+              <CardContent className="p-6">
+                <ul className="space-y-3 font-open-sans text-sm mb-6">
+                  <li className="flex items-center space-x-3">
+                    <span className="text-red-500">✗</span>
+                    <span>No Interview Support</span>
                   </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>Technical Training Program</span>
+                  <li className="flex items-center space-x-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Background Check</span>
                   </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>Active Job Placement Support</span>
+                  <li className="flex items-center space-x-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Resume & Marketing Support</span>
                   </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>Onboarding Assistance</span>
+                  <li className="flex items-center space-x-3">
+                    <span className="text-amber-500 font-bold">5%</span>
+                    <span>Total Annual Income</span>
+                  </li>
+                </ul>
+                <Button variant="outline" asChild className="w-full">
+                  <Link to="/contact">Choose Gold</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Platinum Plan */}
+            <Card className="shadow-elegant border-2 border-primary/30">
+              <CardHeader className="text-center bg-gradient-to-br from-blue-100 to-blue-200 rounded-t-lg">
+                <div className="bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-full inline-block mb-2">
+                  PLATINUM
+                </div>
+                <CardTitle className="font-poppins text-2xl text-foreground">$5000</CardTitle>
+                <p className="font-open-sans text-sm text-muted-foreground">Service Fee</p>
+                <p className="font-open-sans text-lg font-semibold text-foreground">$2000 Offer Letter</p>
+              </CardHeader>
+              <CardContent className="p-6">
+                <ul className="space-y-3 font-open-sans text-sm mb-6">
+                  <li className="flex items-center space-x-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Background Support</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Background Check</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <span className="text-green-500">✓</span>
+                    <span>Complete Career Support</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <span className="text-amber-500 font-bold">5%</span>
+                    <span>Total Annual Income</span>
                   </li>
                 </ul>
                 <Button asChild className="w-full">
-                  <Link to="/contact">Get Started</Link>
+                  <Link to="/contact">Choose Platinum</Link>
                 </Button>
               </CardContent>
             </Card>
+          </div>
 
-            <Card className="shadow-card border-2 border-transparent hover:border-primary/20 transition-colors">
-              <CardHeader className="text-center">
-                <CardTitle className="font-poppins text-xl text-foreground">Executive Package</CardTitle>
-                <p className="font-open-sans text-muted-foreground">Leadership-level advancement</p>
-              </CardHeader>
-              <CardContent className="text-center">
-                <ul className="space-y-3 font-open-sans text-sm text-muted-foreground mb-6">
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>Everything in Professional Package</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>Executive Interview Coaching</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>Salary Negotiation Support</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>90-Day Success Follow-up</span>
-                  </li>
-                </ul>
-                <Button variant="outline" asChild className="w-full">
-                  <Link to="/contact">Learn More</Link>
-                </Button>
-              </CardContent>
-            </Card>
+          {/* Detailed Comparison Table */}
+          <div className="bg-white rounded-lg shadow-card overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-gradient-to-r from-slate-50 to-blue-50">
+                    <th className="text-left p-4 font-poppins font-semibold text-foreground border-r">
+                      Special Benefits Comparison
+                    </th>
+                    <th className="text-center p-4 font-poppins font-semibold bg-slate-100 border-r">
+                      <div className="bg-slate-600 text-white text-xs px-3 py-1 rounded-full inline-block">SILVER</div>
+                    </th>
+                    <th className="text-center p-4 font-poppins font-semibold bg-yellow-100 border-r">
+                      <div className="bg-yellow-600 text-white text-xs px-3 py-1 rounded-full inline-block">GOLD</div>
+                    </th>
+                    <th className="text-center p-4 font-poppins font-semibold bg-blue-100">
+                      <div className="bg-blue-600 text-white text-xs px-3 py-1 rounded-full inline-block">PLATINUM</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="font-open-sans">
+                  <tr className="border-b">
+                    <td className="p-4 font-medium">1 on 1 Resume Session</td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b bg-slate-50">
+                    <td className="p-4 font-medium">Interview Assistant Support</td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-4 font-medium">Chat Support</td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b bg-slate-50">
+                    <td className="p-4 font-medium">Mock Interview Session</td>
+                    <td className="text-center p-4"><span className="text-red-500 text-xl">✗</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-4 font-medium">Live Training with Tech-expert</td>
+                    <td className="text-center p-4"><span className="text-red-500 text-xl">✗</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b bg-slate-50">
+                    <td className="p-4 font-medium">1 on 1 Interview Session</td>
+                    <td className="text-center p-4"><span className="text-red-500 text-xl">✗</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-4 font-medium">Technical Assessment Support</td>
+                    <td className="text-center p-4"><span className="text-red-500 text-xl">✗</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b bg-slate-50">
+                    <td className="p-4 font-medium">1 on 1 TQC</td>
+                    <td className="text-center p-4"><span className="text-red-500 text-xl">✗</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-4 font-medium">Interview Support Till Placement</td>
+                    <td className="text-center p-4"><span className="text-red-500 text-xl">✗</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b bg-slate-50">
+                    <td className="p-4 font-medium">24*7 Recruiter Support</td>
+                    <td className="text-center p-4"><span className="text-red-500 text-xl">✗</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="p-4 font-medium">Email Handling Support</td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr className="border-b bg-slate-50">
+                    <td className="p-4 font-medium">Email + LinkedIn Support</td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-medium">Payment Term Extension</td>
+                    <td className="text-center p-4"><span className="text-red-500 text-xl">✗</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                    <td className="text-center p-4"><span className="text-green-500 text-xl">✓</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
